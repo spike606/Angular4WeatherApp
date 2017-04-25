@@ -1,12 +1,7 @@
-<article>
-  <div class="col-1">
-    <h3>{{weatherItem.cityName}}</h3>
-    <p class="info">{{weatherItem.description}}</p>
+  <div class="flex-container text" fxLayout="row" fxLayoutAlign="center center" fxLayoutWrap="wrap">
+    <h3 flex-item fxFlex="70" fxFlexAlign="left">{{weatherItem.cityName}}</h3>
+    <h3 flex-item fxFlex="30" align="right" >{{weatherItem.temperature}}&deg;</h3>
+    <div flex-item fxFlex="60" >{{weatherItem.description}}</div>
+    <div flex-item fxFlex="40" align="right">{{weatherItem.wind}} m/s</div>
+    <img flex-item src="/assets/icons/{{weatherItem.icon}}.png" height="50px" width="50px">
   </div>
-  <div class="col-2">
-    <span class="temperature">{{weatherItem.temperature}}&deg;</span>
-    <span class="windspeed">{{weatherItem.wind}} m/s</span>
-    <span class="icon" >{{weatherItem.icon}}</span>
-    <img src="/assets/icons/01d.png">
-  </div>
-</article>

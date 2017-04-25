@@ -8,6 +8,7 @@ import { CityWeatherItemComponent } from './city-weather-item/city-weather-item.
 import { CityWeatherListComponent } from './city-weather-list/city-weather-list.component';
 import { SearchCityWeatherComponent } from './search-city-weather/search-city-weather.component';
 import {WeatherService} from "./weather.service";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {WeatherService} from "./weather.service";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    FlexLayoutModule
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent]

@@ -36,7 +36,7 @@ export class SearchCityWeatherComponent implements OnInit {
             retrivedData.weather[0].description,
             retrivedData.main.temp,
             retrivedData.wind.speed,
-            retrivedData.weather.icon);
+            retrivedData.weather[0].icon);
           this.weatherService.addCityWeatherItem(cityWeatherItem);
         }
       );
