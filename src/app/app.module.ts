@@ -4,17 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CityWeatherItemComponent } from './city-weather-item/city-weather-item.component';
+import { CityWeatherListComponent } from './city-weather-list/city-weather-list.component';
+import { SearchCityWeatherComponent } from './search-city-weather/search-city-weather.component';
+import {WeatherService} from "./weather.service";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CityWeatherItemComponent,
+    CityWeatherListComponent,
+    SearchCityWeatherComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
