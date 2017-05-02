@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -9,7 +9,7 @@ import { CityWeatherListComponent } from './city-weather-list/city-weather-list.
 import { SearchCityWeatherComponent } from './search-city-weather/search-city-weather.component';
 import {WeatherService} from "./weather.service";
 import {FlexLayoutModule} from "@angular/flex-layout";
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,9 +21,11 @@ import {FlexLayoutModule} from "@angular/flex-layout";
     BrowserModule,
     FormsModule,
     HttpModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule.forRoot()
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

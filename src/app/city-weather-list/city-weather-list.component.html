@@ -1,6 +1,6 @@
 <section class="weather-list">
-  <div class="flex-container" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutWrap="rowwrap" >
-
+  <div class="flex-container" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap="row-wrap" >
+    <!--<div class="flex-container" fxLayout="row" fxLayoutAlign="center center" fxLayoutWrap="row-wrap" >-->
   <app-city-weather-item *ngFor="let dataItem of WeaterDataItems;" [item]="dataItem"></app-city-weather-item>
   </div>
 

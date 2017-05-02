@@ -3,7 +3,52 @@
 .app-title{
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-style: normal;
+  font-size: larger;
+  color: black;
 }
 .text{
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.found-text{
+  color: black;
+  font-size: large;
+}
+body {
+  background-image: url('/assets/sky2.jpg');
+}
+.form-group {
+  display: flex;
+}
+
+.form-group input {
+  flex: 1;
+}
+/*animation*/
+#weather-panel-animated {
+  background: rgba(176, 196, 222, .33);
+  border-color: lightsteelblue;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.flex-container {
+  display: inline-flex; /* or inline-flex */
 }
